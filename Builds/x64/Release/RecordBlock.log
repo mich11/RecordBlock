@@ -1,0 +1,18 @@
+﻿Build started 11/1/2018 1:53:28 PM.
+     1>Project "C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\RecordBlock.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (RecordControl.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>PreLinkEvent:
+         if not exist "C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin\plugins" mkdir "C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin\plugins"
+         
+         :VCEnd
+       Link:
+         RecordBlock.vcxproj -> C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Release\RecordBlock.dll
+       PostBuildEvent:
+         copy /Y "C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Release\RecordBlock.dll" "C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin\plugins"
+         :VCEnd
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\RecordBlock.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.28

@@ -1,0 +1,24 @@
+﻿Build started 11/1/2018 11:30:12 AM.
+     1>Project "C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\RecordBlock.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin\plugins" mkdir "C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin\plugins"
+         
+         :VCEnd
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\michelle\Documents\GitHub\plugin-GUI\Builds\VisualStudio2013\x64\Release64\bin" /LIBPATH:..\..\x64\Debug64\bin /LIBPATH:C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\ "open-ephys.lib" setupapi.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.lib" /MACHINE:X64 /DLL x64\Debug\OpenEphysLib.obj
+         x64\Debug\RecordBlock.obj
+         x64\Debug\RecordBlockEditor.obj
+            Creating library C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.lib and object C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.exp
+     1>OpenEphysLib.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl juce::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode(void)" (__imp_??0this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode@juce@@QEAA@XZ) referenced in function "void __cdecl juce::`dynamic initializer for 'compileUnitMismatchSentinel''(void)" (??__EcompileUnitMismatchSentinel@juce@@YAXXZ)
+     1>RecordBlock.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl juce::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode(void)" (__imp_??0this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode@juce@@QEAA@XZ)
+     1>RecordBlockEditor.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl juce::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode::this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode(void)" (__imp_??0this_will_fail_to_link_if_some_of_your_compile_units_are_built_in_debug_mode@juce@@QEAA@XZ)
+     1>RecordBlock.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) void __cdecl juce::logAssertion(char const *,int)" (__imp_?logAssertion@juce@@YAXPEBDH@Z) referenced in function "bool __cdecl juce::isPositiveAndBelow<int>(int,int)" (??$isPositiveAndBelow@H@juce@@YA_NHH@Z)
+     1>RecordBlockEditor.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl juce::logAssertion(char const *,int)" (__imp_?logAssertion@juce@@YAXPEBDH@Z)
+     1>RecordBlockEditor.obj : error LNK2001: unresolved external symbol "private: virtual void __cdecl juce::Component::filesDropped(class juce::StringArray const &,int,int)" (?filesDropped@Component@juce@@EEAAXAEBVStringArray@2@HH@Z)
+     1>RecordBlockEditor.obj : error LNK2001: unresolved external symbol "private: virtual int __cdecl juce::MouseListener::mouseWheelMove(class juce::MouseEvent const &,float,float)" (?mouseWheelMove@MouseListener@juce@@EEAAHAEBVMouseEvent@2@MM@Z)
+     1>C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\x64\Debug\RecordBlock.dll : fatal error LNK1120: 4 unresolved externals
+     1>Done Building Project "C:\Users\michelle\Documents\GitHub\RecordBlock\Builds\RecordBlock.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.63
